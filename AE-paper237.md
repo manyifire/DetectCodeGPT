@@ -40,7 +40,8 @@
 
 ## 2. 自动化脚本与代码运行
 
-### 主实验
+### 主实验概述
+主实验提供了`trace_learn_coder.py`作为入口，同时提供了丰富的命令行参数。本文的主要实验是在humaneval, humaneval-plus, classeval, bigcodebench四个dataset上进行。
 - **入口文件：** `trace_learn_coder.py`
 - **实验范围：** humaneval, humaneval-plus, classeval, bigcodebench四个数据集
 
