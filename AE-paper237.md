@@ -15,12 +15,12 @@
 - `requirements-web.txt` - 成功运行  
 - `requirements-eval.txt` - 未能成功运行
     - 错误原因：  
-       按照README-quick start-environment setup的说明运行
+       按照`README - Quick start - Environment setup`运行
        ```bash
        # For evaluating with the bigcodebench dataset, install additional dependencies
        pip install -r requirements-eval.txt
        ```
-        出现了不同package需要的numpy版本冲突错误。以下为具体报错信息：
+        出现不同package需要的numpy版本冲突错误。以下为具体报错信息：
         > ```
         > INFO: pip is looking at multiple versions of opencv-python-headless to determine which version is compatible with other requirements. This could take a while.
         > ERROR: Cannot install -r requirements-eval.txt (line 15), -r requirements-eval.txt (line 16), -r requirements-eval.txt (line 22), -r requirements-eval.txt (line 24), -r requirements-e val.txt (line 29), -r requirements-eval.txt (line 31) and numpy==1.21.2 because these package versions have conflicting dependencies.
