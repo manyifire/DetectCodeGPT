@@ -5,7 +5,8 @@
 
 ## 1. 自动化环境
 
-项目提供了三个环境依赖文件：
+### 概述：
+提供了三个环境依赖文件：
 - `requirements.txt` - 基本环境依赖
 - `requirements-eval.txt` - 针对bigcodebench数据集的额外依赖  
 - `requirements-web.txt` - web demo相关依赖
@@ -21,21 +22,21 @@
        pip install -r requirements-eval.txt
        ```
         出现不同package需要的numpy版本冲突错误。以下为具体报错信息：
-        > ```
-        > INFO: pip is looking at multiple versions of opencv-python-headless to determine which version is compatible with other requirements. This could take a while.
-        > ERROR: Cannot install -r requirements-eval.txt (line 15), -r requirements-eval.txt (line 16), -r requirements-eval.txt (line 22), -r requirements-eval.txt (line 24), -r requirements-e val.txt (line 29), -r requirements-eval.txt (line 31) and numpy==1.21.2 because these package versions have conflicting dependencies.
-        > The conflict is caused by:
-        > The user requested numpy==1.21.2 folium 0.16.0 depends on numpy gensim 4.3.2 depends on numpy>=1.18.5
-        > librosa 0.10.1 depends on numpy!=1.22.0, !=1.22.1, !=1.22.2 and >=1.20.3
-        > matplotlib 3.7.0 depends on numpy>=1.20
-        > numba 0.55.0 depends on numpy<1.22 and >=1.18
-        > opencv-python-headless 4.9.0.80 depends on numpy>=1.21.2; python _version >= "3.10"
-        > opencv-python-headless 4.9.0.80 depends on numpy>=1.21.4; python_version > "3.10" and platform_system = "Darwin"
-        > To fix this you could try to:
-        > 1. loosen the range of package versions you've specified
-        > 2. remove package versions to allow pip to attempt to solve the dependency conflict
-        > ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
-        > ```
+        ```
+        INFO: pip is looking at multiple versions of opencv-python-headless to determine which version is compatible with other requirements. This could take a while.
+        ERROR: Cannot install -r requirements-eval.txt (line 15), -r requirements-eval.txt (line 16), -r requirements-eval.txt (line 22), -r requirements-eval.txt (line 24), -r requirements-e val.txt (line 29), -r requirements-eval.txt (line 31) and numpy==1.21.2 because these package versions have conflicting dependencies.
+        The conflict is caused by:
+        The user requested numpy==1.21.2 folium 0.16.0 depends on numpy gensim 4.3.2 depends on numpy>=1.18.5
+        librosa 0.10.1 depends on numpy!=1.22.0, !=1.22.1, !=1.22.2 and >=1.20.3
+        matplotlib 3.7.0 depends on numpy>=1.20
+        numba 0.55.0 depends on numpy<1.22 and >=1.18
+        opencv-python-headless 4.9.0.80 depends on numpy>=1.21.2; python _version >= "3.10"
+        opencv-python-headless 4.9.0.80 depends on numpy>=1.21.4; python_version > "3.10" and platform_system = "Darwin"
+        To fix this you could try to:
+        1. loosen the range of package versions you've specified
+        2. remove package versions to allow pip to attempt to solve the dependency conflict
+        ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+        ```
 
 ## 2. 自动化脚本与代码运行
 
