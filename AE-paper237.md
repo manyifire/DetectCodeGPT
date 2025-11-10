@@ -14,7 +14,7 @@
 ### 运行情况：
 - `requirements.txt` - 成功运行
 - `requirements-web.txt` - 成功运行  
-- `requirements-eval.txt` - 未能成功运行
+- `requirements-eval.txt` - 未能成功运行  
   错误原因：按照`README - Quick start - Environment setup`运行
   ```bash
     # For evaluating with the bigcodebench dataset, install additional dependencies
