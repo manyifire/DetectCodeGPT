@@ -3,7 +3,7 @@
 **Overall Evaluation:** Weak Accept  
 **Confidence:** medium
 
-## 1. 自动化环境
+## 1. 环境配置
 
 ### 概述：
 提供了三个环境依赖文件：
@@ -37,7 +37,7 @@
     ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
   ```
 
-## 2. 自动化脚本与代码运行
+## 2. 实验运行
 
 ### 主实验概述
 主实验提供了`trace_learn_coder.py`作为入口，同时提供了丰富的命令行参数。本文的主要实验是在humaneval, humaneval-plus, classeval, bigcodebench四个dataset上进行。
@@ -51,7 +51,7 @@
   ```bash
     python trace_learn_coder.py -m deepseek-v3-0324 -d bigcodebench
   ```
-  出现相关依赖未能安装错误，具体报错信息如下：
+  相关依赖未能安装错误，具体报错信息如下：
   ```
     Loading dataset 'bigcodebench' from path: ./datasets/BigCodeBench/data/v0.1.4-00000-of-00001.parquet
     Traceback (most recent call last):
@@ -78,7 +78,7 @@
   ```bash
     python trace_learn_coder.py -m deepseek-v3-0324 -d humanevalplus
   ```
-  出现相关依赖未能安装错误，具体报错信息如下：
+  unsupported dataset错误，具体报错信息如下：
   ```
     Loading dataset 'humanevalplus' from path: ./datasets/human_eval_plus/data/test-00000-of-00001-5973903632b82d40.parquet
     Error loading dataset: Unsupported dataset name: humanevalplus
@@ -88,7 +88,7 @@
   ```bash
     python trace_learn_coder.py -m deepseek-v3-0324 -d classeval
   ```
-  出现相关依赖未能安装错误，具体报错信息如下：
+  unsupported dataset错误，具体报错信息如下：
   ```
    Loading dataset 'classeval' from path: ./datasets/ClassEval/data/test-00000-of-00001-5c45fa6e45572491.parquet
     Error loading dataset: Unsupported dataset name: classeval
@@ -98,8 +98,12 @@
 - 入口文件：`web_demo/app.py`
 - 运行情况：成功运行
 
+## 4.实验结果
+由于api限制，在humaneval
+
 ## 3. 文档 
 README非常详细。包含了项目整体介绍，核心功能，主要实验数据，目录结构与quick start。项目目录设置合理，quick start详细具体（包括了环境配置，实验运行的详细步骤）。
+
 
 ## 总结
 整体来说，该artifact文档详细，目录结构合理，代码结构清晰。主要实验除了部分数据集支持不足导致无法运行之外，其他部分均运行良好。作者提供的web demo运行良好，很好地可视化了multi-agent运行流程情况与中间输出。
