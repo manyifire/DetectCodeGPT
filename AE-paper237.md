@@ -15,7 +15,7 @@
 - `requirements-web.txt` - 成功运行  
 - `requirements-eval.txt` - 未能成功运行
 
-**错误原因：**  
+&nbsp;错误原因：  
 按照README-quick start-environment setup的说明运行
 ```bash
 # For evaluating with the bigcodebench dataset, install additional dependencies
